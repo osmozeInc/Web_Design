@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonequinha</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            Nome: <input type="text" name="nome"><br><br>
+            Sobrenome: <input type="text" name="sobrenome"><br><br>
+            Idade: <input type="number" name="idade" min="0" max="120"><br><br>
+            Data de nascimento: <input type="date" name="data"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados Profisionais</legend>
+            Escolaridade: <br>
+            <input type="radio" name="escolaridade" value="Ensino Fundamental Incompleto"> Ensino Fundamental Incompleto <br>
+            <input type="radio" name="escolaridade" value="Ensino Fundamental Completo"> Ensino Fundamental Completo <br>
+            <input type="radio" name="escolaridade" value="Ensino Médio Incompleto"> Ensino Médio Incompleto <br>
+            <input type="radio" name="escolaridade" value="Ensino Médio Completo"> Ensino Médio Completo <br>
 
+            Ultima experiência: <input type="text" name="experiencia" id=""><br>
+            Pretenção salarial: <input type="number" name="pretensao" id="" step="0.10" min="0.00" placeholder="0.00" required>
+
+        </fieldset> <br>
+        <input type="reset" name="Limpar" id="">
+        <input type="submit" name="Salvar" id="">
+    </form>
+</body>
+</html>
+
+<!--
+   input:   entrada de dados enviados pelo usuário
+        type="radio"  -> campo de seleção única (tem o mesmo idenificador)
+        placeholder   -> texto de fundo do campo do input
+        required      -> torna o campo obrigatório
+
+    form:   faz com que os inputs dentro dele façam parte de um cojunto
+
+fieldset:   campo definido com borda para um conjunto de dados
+        legend:   adiciona uma legenda/título para o fieldset
+-->
