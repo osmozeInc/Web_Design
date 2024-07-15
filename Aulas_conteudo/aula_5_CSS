@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ops</title>
+</head>
+<body style="background-color: bisque;">
+    
+</body>
+</html>
+
+<!--
+<body style="background-color: bisque;">
+    style           -> modificar algo da tag
+    backgroud-volor -> cor de fundo da página
+    bisque          -> cor escolhida
+
+<style> </style>
+    tudo que estiver dentro da tag style é parte do ccs;
+-->
