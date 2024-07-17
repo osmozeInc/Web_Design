@@ -3,51 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela de linguagens</title>
+    <style>
+        td{
+            text-align: center; /*left, right, justify*/
+            vertical-align: middle; /*top, bottom*/
+            padding: 20px;
+        }
+        table, td{
+            border: 1px solid;
+            border-collapse: collapse;
+            width: 624px;
+            height: 150px;
+        }
+        th{
+            background-color: cornflowerblue;
+        }
+        tr:nth-child(even) {background-color:rgb(225, 234, 255);}
+        tr:hover{background-color: rgb(150, 200, 230);}
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    </style>
 </head>
 <body>
-    <table border="1" width="624">
+    <table>
         <thead>
             <tr>
-                <th colspan=4 align="center">Linguagens de Programação</th>
+                <th colspan=4>Linguagens de Programação</th>
             </tr>
             <tr>
-                <td align="center">Logo</td>
-                <td align="center">Linguagem</td>
-                <td align="center">Tipo</td>
-                <td align="center">Nivel</td>
+                <td>Logo</td>
+                <td>Linguagem</td>
+                <td>Tipo</td>
+                <td>Nivel</td>
             </tr>
             <tr>
-                <td align="center"><img src="Python-logo-notext.svg.png" height="80" width="80"></td>
-                <td align="center">Python</td>
-                <td align="center">Interpretada</td>
-                <td align="center">Alto</td>
+                <td><img src="imagens/Python-logo-notext.svg.png"></td>
+                <td>Python</td>
+                <td>Interpretada</td>
+                <td>Alto</td>
             </tr>
             <tr>
-                <td align="center"><img src="C_Logo.png" alt="" height="80" width="80"></td>
-                <td align="center">C</td>
-                <td align="center">Compilada</td>
-                <td align="center">Médio</td>
+                <td><img src="imagens/C_Logo.png"></td>
+                <td>C</td>
+                <td>Compilada</td>
+                <td>Médio</td>
             </tr>
             <tr>
-                <td align="center"><img src="181_Java_logo_logos-512.webp"  height="80" width="80" alt=""></td>
-                <td align="center">Java</td>
-                <td align="center">Compilada e Interpretada</td>
-                <td align="center">Alto</td>
+                <td><img src="imagens/181_Java_logo_logos-512.webp"></td>
+                <td>Java</td>
+                <td>Compilada e Interpretada</td>
+                <td>Alto</td>
             </tr>
             <tr>
-                <td align="center"><img src="JavaScript-Logo.png" height="80" width="120" alt=""></td>
-                <td align="center">JavaScript</td>
-                <td align="center">Interpretada</td>
-                <td align="center">Alto</td>
+                <td><img src="imagens/JavaScript-Logo.png" style="width: 120px;"></td>
+                <td>JavaScript</td>
+                <td>Interpretada</td>
+                <td>Alto</td>
             </tr>
             <tr>
-                <td align="center"><img src="7ed9e27389063a0790a847d8d4f7d683.png" height="80" width="100" alt=""></td>
-                <td align="center">Assembly</td>
-                <td align="center">Compilada</td>
-                <td align="center">Baixo</td>
+                <td><img src="imagens/7ed9e27389063a0790a847d8d4f7d683.png"></td>
+                <td>Assembly</td>
+                <td>Compilada</td>
+                <td>Baixo</td>
             </tr>
-
         </thead>
 
     </table>
