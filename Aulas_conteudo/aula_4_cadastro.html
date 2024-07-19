@@ -5,40 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonequinha</title>
     <style>
-        input, select{
-            width: 100%;
+        input{
             height: 30px;
-            border-radius: 4px;
-            background: #eeeeee;
             border: 1px solid;
-            border-color: blue;
-            box-shadow: 1px 1px 2px #333;
+            border-color: rgb(25, 37, 39);
+            box-shadow: 1px 1px 2px #242a7a;
+        }
+        input[type="radio"]{
+            box-shadow: none;
         }
         table{
-            width: 50%;
+            width: 80%;
+        }
+        td.escolaridade{
+            text-align: center;
         }
         fieldset{
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         td{
-            text-align: right;
+            text-align: left;
             padding: 5px;
-            border: 1px;
-            border-color: blue;
-            border-style: inherit;
         }
         input:hover{
-            background-color: rgb(240, 255, 241);
+            background-color: rgb(241, 241, 241);
         }
         input:focus{
-            background: chocolate;
+            background: rgb(241, 241, 241);
         }
-        h1{
-            text-align: center;
-        }        
         div{
             margin-left: 5%;
             margin-right: 5%;
+        }
+        input[type=submit]{
+            background-color: #333;
+            color: aliceblue;
+        }
+        .escolaridade{
+            height: 15px;
         }
     </style>
 </head>
@@ -69,15 +73,23 @@
 
         <fieldset>
             <legend>Dados Profisionais</legend>
-            Escolaridade: <br>
-            <input type="radio" name="escolaridade" value="Ensino Fundamental Incompleto"> Ensino Fundamental Incompleto <br>
-            <input type="radio" name="escolaridade" value="Ensino Fundamental Completo"> Ensino Fundamental Completo <br>
-            <input type="radio" name="escolaridade" value="Ensino Médio Incompleto"> Ensino Médio Incompleto <br>
-            <input type="radio" name="escolaridade" value="Ensino Médio Completo"> Ensino Médio Completo <br>
-
-            Ultima experiência: <input type="text" name="experiencia" id=""><br>
-            Pretenção salarial: <input type="number" name="pretensao" id="" step="0.10" min="0.00" placeholder="0.00" required>
-
+            <table>
+            <tr>
+                <td>Escolaridade:</td>
+                <td>
+                <input type="radio" name="escolaridade" class="escolaridade" value="Ensino Fundamental Incompleto"> Ensino Fundamental Incompleto <br>
+                <input type="radio" name="escolaridade" class="escolaridade" value="Ensino Fundamental Completo"> Ensino Fundamental Completo <br>
+                <input type="radio" name="escolaridade" class="escolaridade" value="Ensino Médio Incompleto"> Ensino Médio Incompleto <br>
+                <input type="radio" name="escolaridade" class="escolaridade" value="Ensino Médio Completo"> Ensino Médio Completo <br>
+                </td>
+            </tr>       
+            <tr>
+                Ultima experiência: <input type="text" name="experiencia" id="">
+            </tr><br>
+            <tr>
+                Pretenção salarial: <input type="number" name="pretensao" id="" step="0.10" min="0.00" placeholder="0.00" required>
+            </tr>
+            </table>
         </fieldset> <br>
         <input type="reset" name="Limpar" id="">
         <input type="submit" name="Salvar" id="">
