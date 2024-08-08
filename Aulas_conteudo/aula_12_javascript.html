@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12 JavaScript</title>
+    <style>
+        table
+        {
+            margin: auto;
+            border: 5px ridge gray;
+        }
+        th
+        {
+            display: flex;
+            align-items: center;
+        }
+        td
+    </style>
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <script>
+        var num1 = 8;
+        var num2 = 10;
+        var soma = num1 + num2;
+        document.write("soma é: " + soma + "<br>");
+
+        var num3 = 7;
+        var media = (num1 + num2 + num3) / 3;
+        document.write("media é: " + media.toFixed(1) + "<br>");
+    </script>
+
+    
+    <form id="calculo">
+        <table style="border: solid 1px black;">
+            <tr>
+                <td> Número 1: </td>
+                <td> <input type="number" id="n1"> <br></td>
+            </tr>
+            <tr>
+                <td> Número 2: </td>
+                <td> <input type="number" id="n2"> <br></td>
+            </tr>
+
+            <br>
+
+            <tr>
+                <td> Total: </td>
+                <td> <input type="number" id="total"> <br></td>
+            </tr>
+            <br>
+            <tr>
+                <td> <input type="submit" value="Calcular"> </td>
+                <td> <input type="reset" value="Limpar"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <br> <br> <br>
+
+    <table>
+        <thead> 
+            <th> <input type="number" id="resultado" style="width: 100%;" readonly> </th>
+        </thead>
+
+        <tr>
+            <td> 9 </td>
+            <td> 8 </td>
+            <td> 7 </td>
+            <td> + </td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>
+
+<script>
+    document.getElementById('calculo').onsubmit = function()
+    {
+        var n1 = document.getElementById('n1').value;
+        var n2 = document.getElementById('n2').value;
+        var total = Number(n1) + parseFloat(n2);
+        document.getElementById('total').value = total;
+        return false;
+    }
+
+</script>
