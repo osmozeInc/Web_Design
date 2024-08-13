@@ -1,3 +1,4 @@
+ /* css proprio ========================================================== */
 hr {
     border-top: 20px solid red;
     width: 100%;
@@ -16,11 +17,75 @@ h1, h3{
     font-weight: bold;
     font-size: large;
 }
+/* ============================================================================ */
 
-.seta-tipo-1{
-  color: #BF0426;
-}                
-/* From Uiverse.io by ferlagher */ 
+
+/* media query para responsividade das telas  ======================================== */
+/* Ícone pequeno para telas pequenas */
+@media (max-width: 576px) {
+  .icon-responsive {
+      font-size: 2rem; /* Equivalente a fa-2x */
+  }
+}
+
+/* Ícone médio para telas médias */
+@media (min-width: 577px) and (max-width: 768px) {
+  .icon-responsive {
+      font-size: 4rem; /* Equivalente a fa-4x */
+  }
+}
+
+/* Ícone grande para telas grandes */
+@media (min-width: 769px) {
+  .icon-responsive {
+      font-size: 6rem; /* Tamanho grande personalizado */
+  }
+}
+
+/* Ícone extra grande para telas muito grandes */
+@media (min-width: 1200px) {
+  .icon-responsive {
+      font-size: 10rem; /* Tamanho muito grande */
+  }
+}
+
+/* Para telas pequenas */
+@media (max-width: 576px) {
+  .responsive-svg {
+      width: 50px;
+      height: 50px;
+  }
+}
+
+/* Para telas médias */
+@media (min-width: 577px) and (max-width: 768px) {
+  .responsive-svg {
+      width: 100px;
+      height: 100px;
+  }
+}
+
+/* Para telas grandes */
+@media (min-width: 769px) {
+  .responsive-svg {
+      width: 150px;
+      height: 150px;
+  }
+}
+
+/* Para telas muito grandes */
+@media (min-width: 1200px) {
+  .responsive-svg {
+      width: 200px;
+      height: 200px;
+  }
+}
+/* ============================================================================ */
+
+
+
+
+/* From Uiverse.io by ferlagher =============================================== */ 
 .button-sobre-nos {
     position: relative;
     font-size: 1.2em;
@@ -55,3 +120,4 @@ h1, h3{
     box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
     transform: translate(0.1em, 0.1em);
   }
+  /* ============================================================================ */
