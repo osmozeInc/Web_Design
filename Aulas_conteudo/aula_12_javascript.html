@@ -72,6 +72,16 @@
         <br>
         <input class="btn btn-info" type="submit" value="Entrar"> <br>
     </form>
+
+    <script>
+        var c = prompt("Digite o valor a ser investido: ");
+        var i = prompt("Digite o valor da taxa de juros: ");
+        var t = prompt("Digite o tempo de aplicação: ");
+
+        var juros = parseFloat(c) * (parseFloat(i)/100) * parseFloat(t);
+
+        document.getElementById("juros").innerHTML = "O valor dos juros é: R$ " + juros.toFixed(2);
+    </script>
     
 </body>
 </html>
