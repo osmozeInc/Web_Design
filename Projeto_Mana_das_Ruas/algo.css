@@ -1,9 +1,13 @@
- /* css proprio ========================================================== */
+ 
+ 
+ 
+ 
+ /* CSS proprio ========================================================== */
 hr {
     border-top: 20px solid red;
     width: 100%;
 }
-td {
+.td-contatos {
     padding: 7px;
     text-align: end;
 }
@@ -17,39 +21,101 @@ h1, h3{
     font-weight: bold;
     font-size: large;
 }
+.tr-setas
+{
+  line-height: 0.5;
+  padding: 0px;
+}
 /* ============================================================================ */
 
 
-/* media query para responsividade das telas  ======================================== */
-/* Ícone pequeno para telas pequenas */
+
+
+/* Ícone para responsividade das telas  ======================================== */
+
 @media (max-width: 576px) {
   .icon-responsive {
-      font-size: 2rem; /* Equivalente a fa-2x */
+      font-size: 4rem; 
   }
 }
 
-/* Ícone médio para telas médias */
 @media (min-width: 577px) and (max-width: 768px) {
   .icon-responsive {
-      font-size: 4rem; /* Equivalente a fa-4x */
+      font-size: 5rem;
   }
 }
 
-/* Ícone grande para telas grandes */
 @media (min-width: 769px) {
   .icon-responsive {
-      font-size: 6rem; /* Tamanho grande personalizado */
+      font-size: 6rem; 
   }
 }
 
-/* Ícone extra grande para telas muito grandes */
 @media (min-width: 1200px) {
   .icon-responsive {
-      font-size: 10rem; /* Tamanho muito grande */
+      font-size: 9rem;
   }
 }
+/* ============================================================================ */
 
-/* Para telas pequenas */
+
+
+
+/* Tablet  ==================================================================== */
+/* Estilo do tablete */
+/* Estilo geral para o tablet */
+.tablet-container {
+  position: relative;
+  width: 80%; /* Ajusta a largura do tablet conforme o tamanho da tela */
+  max-width: 600px; /* Largura máxima do tablet */
+  height: 90vh; /* Altura do tablet */
+  max-height: 800px; /* Altura máxima do tablet */
+  margin: auto;
+  background-color: #e0e0e0; /* Cor de fundo cinza claro */
+  border-radius: 30px; /* Bordas arredondadas do tablet */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do tablet */
+}
+
+/* Estilo para o botão na parte inferior do tablet */
+.tablet-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 20px;
+  background-color: #b0b0b0; /* Cor cinza para o botão */
+  border-radius: 20px; /* Bordas arredondadas do botão */
+}
+
+/* Estilo para as imagens dentro do tablet */
+.tablet-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilo para a imagem superior */
+.img-top {
+  height: 15%; /* Altura da imagem superior */
+}
+
+/* Estilo para a imagem central */
+.img-center {
+  height: 70%; /* Altura da imagem central */
+}
+
+/* Estilo para a imagem inferior */
+.img-bottom {
+  height: 15%; /* Altura da imagem inferior */
+}
+/* ============================================================================ */
+
+
+
+
+
+/* Setas para telas personalizadas  =========================================== */
 @media (max-width: 576px) {
   .responsive-svg {
       width: 50px;
@@ -57,27 +123,24 @@ h1, h3{
   }
 }
 
-/* Para telas médias */
 @media (min-width: 577px) and (max-width: 768px) {
+  .responsive-svg {
+      width: 80px;
+      height: 80px;
+  }
+}
+
+@media (min-width: 769px) {
   .responsive-svg {
       width: 100px;
       height: 100px;
   }
 }
 
-/* Para telas grandes */
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
   .responsive-svg {
       width: 150px;
       height: 150px;
-  }
-}
-
-/* Para telas muito grandes */
-@media (min-width: 1200px) {
-  .responsive-svg {
-      width: 200px;
-      height: 200px;
   }
 }
 /* ============================================================================ */
