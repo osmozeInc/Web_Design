@@ -62,15 +62,13 @@ h1, h3{
 
 
 /* Tablet  ==================================================================== */
-/* Estilo do tablete */
-/* Estilo geral para o tablet */
 .tablet-container {
   position: relative;
   width: 80%; /* Ajusta a largura do tablet conforme o tamanho da tela */
   max-width: 600px; /* Largura máxima do tablet */
   height: 90vh; /* Altura do tablet */
   max-height: 800px; /* Altura máxima do tablet */
-  margin: auto;
+  margin-top: 10%;
   background-color: #e0e0e0; /* Cor de fundo cinza claro */
   border-radius: 30px; /* Bordas arredondadas do tablet */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do tablet */
@@ -184,3 +182,35 @@ h1, h3{
     transform: translate(0.1em, 0.1em);
   }
   /* ============================================================================ */
+
+
+
+
+/* texto responsivo ============================================================= */
+  h4 {
+    font-size: 24px; /* Tamanho padrão */
+}
+
+@media (max-width: 576px) {
+    h4 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    h4 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 993px) {
+    h4 {
+        font-size: 36px;
+    }
+}
