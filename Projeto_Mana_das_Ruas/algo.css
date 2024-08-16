@@ -7,10 +7,12 @@ hr {
     border-top: 20px solid red;
     width: 100%;
 }
+
 .td-contatos {
     padding: 7px;
     text-align: end;
 }
+
 h1, h3{
     text-align: center;
 }
@@ -21,12 +23,56 @@ h1, h3{
     font-weight: bold;
     font-size: large;
 }
+
 .tr-setas
 {
   line-height: 0.5;
   padding: 0px;
 }
 /* ============================================================================ */
+
+
+
+
+
+/* From Uiverse.io by ferlagher =============================================== */ 
+.button-sobre-nos {
+  position: relative;
+  font-size: 1.2em;
+  padding: 0.7em 1.4em;
+  background-color: #BF0426;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.button-sobre-nos::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.button-sobre-nos:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.button-sobre-nos:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
+}
+
+/* ============================================================================ */
+
 
 
 
@@ -55,57 +101,6 @@ h1, h3{
   .icon-responsive {
       font-size: 9rem;
   }
-}
-/* ============================================================================ */
-
-
-
-
-/* Tablet  ==================================================================== */
-.tablet-container {
-  position: relative;
-  width: 80%; /* Ajusta a largura do tablet conforme o tamanho da tela */
-  max-width: 600px; /* Largura máxima do tablet */
-  height: 90vh; /* Altura do tablet */
-  max-height: 800px; /* Altura máxima do tablet */
-  margin-top: 10%;
-  background-color: #e0e0e0; /* Cor de fundo cinza claro */
-  border-radius: 30px; /* Bordas arredondadas do tablet */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do tablet */
-}
-
-/* Estilo para o botão na parte inferior do tablet */
-.tablet-button {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 20px;
-  background-color: #b0b0b0; /* Cor cinza para o botão */
-  border-radius: 20px; /* Bordas arredondadas do botão */
-}
-
-/* Estilo para as imagens dentro do tablet */
-.tablet-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Estilo para a imagem superior */
-.img-top {
-  height: 15%; /* Altura da imagem superior */
-}
-
-/* Estilo para a imagem central */
-.img-center {
-  height: 70%; /* Altura da imagem central */
-}
-
-/* Estilo para a imagem inferior */
-.img-bottom {
-  height: 15%; /* Altura da imagem inferior */
 }
 /* ============================================================================ */
 
@@ -146,71 +141,86 @@ h1, h3{
 
 
 
-/* From Uiverse.io by ferlagher =============================================== */ 
-.button-sobre-nos {
-    position: relative;
-    font-size: 1.2em;
-    padding: 0.7em 1.4em;
-    background-color: #BF0426;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.5em;
-    color: #DEDEDE;
-    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
-  }
-  
-  .button-sobre-nos::before {
-    position: absolute;
-    content: '';
-    height: 0;
-    width: 0;
-    top: 0;
-    left: 0;
-    background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
-    border-radius: 0 0 0.5em 0;
-    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
-  }
-  
-  .button-sobre-nos:hover::before {
-    width: 1.6em;
-    height: 1.6em;
-  }
-  
-  .button-sobre-nos:active {
-    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
-    transform: translate(0.1em, 0.1em);
-  }
-  /* ============================================================================ */
-
-
-
 
 /* texto responsivo ============================================================= */
-  h4 {
-    font-size: 24px; /* Tamanho padrão */
+.h4-acoes {
+  font-size: 20px; /* Tamanho padrão */
 }
 
 @media (max-width: 576px) {
-    h4 {
-        font-size: 16px;
-    }
+  .h4-acoes {
+      font-size: 200%;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    h4 {
-        font-size: 20px;
-    }
+  .h4-acoes {
+      font-size: 200%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    h4 {
-        font-size: 28px;
-    }
+  .h4-acoes {
+      font-size: 120%;
+  }
 }
 
 @media (min-width: 993px) {
-    h4 {
-        font-size: 36px;
-    }
+  .h4-acoes {
+      font-size: 160%;
+  }
 }
+/* ============================================================================ */
+
+
+
+
+
+/* Tablet  ==================================================================== */
+.tablet-container {
+  position: relative;
+  width: 80%; /* Ajusta a largura do tablet conforme o tamanho da tela */
+  max-width: 600px; /* Largura máxima do tablet */
+  height: 90%; /* Altura do tablet */
+  max-height: 800px; /* Altura máxima do tablet */
+  min-height: 400px;
+  margin-top: 10%;
+  background-color: #e0e0e0; /* Cor de fundo cinza claro */
+  border-radius: 30px; /* Bordas arredondadas do tablet */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do tablet */
+}
+
+/* Estilo para o botão na parte inferior do tablet */
+.tablet-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 20px;
+  background-color: #b0b0b0; /* Cor cinza para o botão */
+  border-radius: 20px; /* Bordas arredondadas do botão */
+}
+
+/* Estilo para as imagens dentro do tablet */
+.tablet-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilo para a imagem superior */
+.img-top {
+  height: 15%; /* Altura da imagem superior */
+}
+
+/* Estilo para a imagem central */
+.img-center {
+  height: 70%; /* Altura da imagem central */
+}
+
+/* Estilo para a imagem inferior */
+.img-bottom {
+  height: 15%; /* Altura da imagem inferior */
+}
+/* ============================================================================ */
