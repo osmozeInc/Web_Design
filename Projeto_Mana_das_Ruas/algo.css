@@ -142,32 +142,66 @@ h1, h3{
 
 
 
-/* texto responsivo ============================================================= */
+/* H4 responsivo ============================================================== */
 .h4-acoes {
   font-size: 20px; /* Tamanho padrão */
 }
 
 @media (max-width: 576px) {
   .h4-acoes {
-      font-size: 200%;
+      font-size: 120%;
   }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
   .h4-acoes {
-      font-size: 200%;
+      font-size: 120%;
   }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   .h4-acoes {
-      font-size: 120%;
+      font-size: 90%;
   }
 }
 
 @media (min-width: 993px) {
   .h4-acoes {
       font-size: 160%;
+  }
+}
+/* ============================================================================ */
+
+
+
+
+
+/* H1 responsivo ============================================================== */
+.h1-acoes {
+  font-size: 100%; /* Tamanho padrão */
+}
+
+@media (max-width: 576px) {
+  .h1-acoes {
+      font-size: 150%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .h1-acoes {
+      font-size: 150%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .h1-acoes {
+      font-size: 170%;
+  }
+}
+
+@media (min-width: 993px) {
+  .h1-acoes {
+      font-size: 230%;
   }
 }
 /* ============================================================================ */
