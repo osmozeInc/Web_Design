@@ -238,7 +238,7 @@ h1, h3{
 
 /* Estilo para as imagens dentro do tablet */
 .tablet-container img {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: block;
 }
@@ -246,11 +246,14 @@ h1, h3{
 /* Estilo para a imagem superior */
 .img-top {
   height: 15%; /* Altura da imagem superior */
+  margin-top: 5%;
 }
 
 /* Estilo para a imagem central */
 .img-center {
-  height: 70%; /* Altura da imagem central */
+  height: 40%; /* Altura da imagem central */
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* Estilo para a imagem inferior */
@@ -258,3 +261,12 @@ h1, h3{
   height: 15%; /* Altura da imagem inferior */
 }
 /* ============================================================================ */
+
+
+
+
+
+.container-ex {
+  max-width: 100%;
+  height: 100%;
+}
