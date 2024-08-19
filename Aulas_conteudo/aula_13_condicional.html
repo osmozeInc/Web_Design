@@ -3,26 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>condicional</title>
 </head>
 <body>
-    <div class="card container" id="juros">
-        R$ 0,00
-    </div>
-    <script>
-        var media
-        var n1 = 8;
-        var n2 = 10;
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="">Nome</label>
+                </td>
+                <td>
+                    <input type="text" id="nome">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Senha</label>
+                </td>
+                <td>
+                    <input type="password" id="senha">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="validarform(event)">Enviar</button>
+                </td>
+        </table>
+    </form>
 
-        if(n1 > n2){
-            alert("n1 é maior que n2");
-        }
-        else if(n1 == n2){
-            alert("n1 é igual a n2");
-        }
-        else{
-            alert("n2 é menor que n1");
+    <script>
+        function validarform(event){
+            var nome = document.getElementById("nome").value;
+            var senha = document.getElementById("senha").value;
+            var mensagem = validar(nome, senha);
+
+            if(mensagem == true){
+                alert("Login efetuado com sucesso");
+            }else{
+                event.preventDefault();
+                alert(mensagem);
+            }
         }
     </script>
+
 </body>
 </html>
+
+
+<script>
+    function validar(nome, senha){
+
+        if(nome == ""){
+            return "digite seu nome";
+        }
+        else if(temNumeros(nome)){
+            return "digite apenas letras";
+        }
+        else if(temCaracteresEspeciais(nome)){
+            return "digite apenas letras";
+        }
+
+        if(senha == ""){
+            return "digite sua senha";
+        }
+        else if(senha.length < 8){
+            return "digite uma senha com no mínimo 8 caracteres";
+        }
+        else if(temLetras(senha) == false){
+            return "sua senha deve conter letras";
+        }
+        else if(temNumeros(senha) == false){
+            return "sua senha deve conter números";
+        }
+        else if(temCaracteresEspeciais(senha) == false){
+            return "sua senha deve conter caracteres especiais";
+        }
+        return true;
+    }
+
+    function temCaracteresEspeciais(texto) {
+        return /[!@#$%^&*(),.?":{}|<>]/.test(texto);
+    }
+
+    function temLetras(texto) {
+        return /[a-zA-Z]/.test(texto);
+    }
+
+    function temNumeros(texto) {
+        return /\d/.test(texto);
+    }
+</script>
