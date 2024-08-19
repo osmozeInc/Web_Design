@@ -378,15 +378,22 @@ h1, h3{
 
 
 
-.td-cabecario-doe {
+.td-cabecario {
   color: #C43334;
   font-weight: bold;
+}
+
+
+.titulos {
+  color: #962020;
 }
 
 
 
 .li-ajude {
   font-weight: bold;
+  color: #962020;
+
 }
 
   @media (max-width: 576px) {
@@ -409,4 +416,24 @@ h1, h3{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+
+
+
+  .paragrafo-voluntario {
+    font-size: 100%;
+    color: #962020;
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    .paragrafo-voluntario {
+        font-size: 120%;
+    }
+  }
+
+  @media (min-width: 993px) {
+    .paragrafo-voluntario {
+        font-size: 140%;
+    }
   }
