@@ -21,8 +21,32 @@ h1, h3{
 {
     text-align: center;
     font-weight: bold;
-    font-size: large;
 }
+
+    @media (max-width: 576px) {
+      .paragrafo-do-card {
+        font-size: 55%;
+      }
+    }
+
+    @media (min-width: 1220px) {
+      .paragrafo-do-card {
+        font-size: 120%;
+      }
+    }
+
+
+    @media (max-width: 576px) {
+      .texto-do-botao {
+        font-size: 70%;
+      }
+    }
+
+    @media (min-width: 1220px) {
+      .texto-do-botao {
+        font-size: 120%;
+      }
+    }
 
 .tr-setas
 {
@@ -167,7 +191,13 @@ h1, h3{
 
 @media (min-width: 993px) {
   .h4-acoes {
-      font-size: 160%;
+      font-size: 140%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h4-acoes {
+      font-size: 180%;
   }
 }
 /* ============================================================================ */
@@ -195,14 +225,21 @@ h1, h3{
 
 @media (min-width: 769px) and (max-width: 992px) {
   .h1-acoes {
-      font-size: 170%;
+      font-size: 150%;
   }
 }
 
 @media (min-width: 993px) {
   .h1-acoes {
+      font-size: 200%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1-acoes {
       font-size: 230%;
   }
+  
 }
 /* ============================================================================ */
 
@@ -212,13 +249,61 @@ h1, h3{
 
 /* Tablet  ==================================================================== */
 .tablet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+  margin-right: 5%
+}
+
+@media (min-width: 0px) {
+  .tablet-container {
+    width: 500px; /* Largura maior para telas maiores */
+    height: 400px; /* Altura maior para telas maiores */
+  }
+  @media (min-width: 0px) and (max-width: 577px) {
+    .tablet-container{
+      width: 300px;
+      height: 400px;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .tablet-container{
+      width: 400px;
+      height: 500px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1100px) {
+    .tablet-container{
+      width: 320px;
+      height: 420px;
+    }
+  }
+  
+  @media (min-width: 1100px) and (max-width: 1400px) {
+    .tablet-container{
+      width: 400px;
+      height: 500px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .tablet-container{
+      width: 500px;
+      height: 600px;
+    }
+    
+  }
+}
+
+
+.tablet-fundo {
   position: relative;
-  width: 80%; /* Ajusta a largura do tablet conforme o tamanho da tela */
-  max-width: 600px; /* Largura máxima do tablet */
-  height: 90%; /* Altura do tablet */
-  max-height: 800px; /* Altura máxima do tablet */
-  min-height: 400px;
-  margin-top: 10%;
+  width: 100%; /* Ajusta a largura do tablet conforme o tamanho da tela */
+  height: 100%; /* Altura do tablet */
   background-color: #e0e0e0; /* Cor de fundo cinza claro */
   border-radius: 30px; /* Bordas arredondadas do tablet */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do tablet */
@@ -234,6 +319,7 @@ h1, h3{
   height: 20px;
   background-color: #b0b0b0; /* Cor cinza para o botão */
   border-radius: 20px; /* Bordas arredondadas do botão */
+  margin-bottom: 2%;
 }
 
 /* Estilo para as imagens dentro do tablet */
