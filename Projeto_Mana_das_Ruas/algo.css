@@ -266,10 +266,6 @@ h1, h3{
 
 
 
-.container-ex {
-  max-width: 100%;
-  height: 100%;
-}
 /* paragrafo responsivo ======================================================= */
 .p-linha-do-tempo {
   font-size: 20px; /* Tamanho padrão */
@@ -373,4 +369,44 @@ h1, h3{
   z-index: 3;
 }
 /* =============================================================
->>>>>>> 5a07fe9d45ecec5ffe921a66e806fbcec12718c9
+
+
+
+
+/* =============================================================== */
+
+
+
+
+.td-cabecario-doe {
+  color: #C43334;
+  font-weight: bold;
+}
+
+
+
+.li-ajude {
+  font-weight: bold;
+}
+
+  @media (max-width: 576px) {
+    .li-ajude {
+        font-size: 80%;
+    }
+  }
+
+  @media (min-width: 993px) {
+    .li-ajude {
+        font-size: 110%;
+    }
+  }
+
+
+
+
+
+  .qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
