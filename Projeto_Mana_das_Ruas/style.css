@@ -332,12 +332,12 @@ h1, h3{
 /* Estilo para a imagem superior */
 .img-top {
   height: 15%; /* Altura da imagem superior */
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 /* Estilo para a imagem central */
 .img-center {
-  height: 40%; /* Altura da imagem central */
+  width: 90.1%; /* Largura da imagem central */
   margin-left: 5%;
   margin-right: 5%;
 }
