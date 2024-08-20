@@ -385,69 +385,6 @@ h1, h3{
 
 
 
-
-/* linha do tempo =========================================================== */
-.timeline-container {
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-.timeline-container h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.timeline {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 20px 0;
-  position: relative;
-}
-
-.timeline-item {
-  position: relative;
-  width: 15%;
-  min-width: 120px;
-  text-align: center;
-  z-index: 2;
-  margin-bottom: 50px;
-}
-
-.timeline-item h3 {
-  background-color: #ff4c4c; /* Cor de fundo para as caixas com o ano */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 1.5em;
-}
-
-.timeline-item p {
-  font-size: 1em;
-  color: #555;
-  margin: 0;
-  padding: 0 10px;
-}
-
-.timeline-item::after {
-  content: '';
-  position: absolute;
-  top: calc(50% - 10px);
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  background-color: #C43334;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-}
-/* =============================================================
-
-
-
-
 /* =============================================================== */
 
 
@@ -491,6 +428,7 @@ h1, h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
   }
 
 
