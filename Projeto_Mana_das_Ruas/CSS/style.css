@@ -542,6 +542,18 @@ body {
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .espaco-lateral {
+    margin-left: -14%;
+  }
+}
+
+@media (min-width: 800px) {
+  .espaco-lateral {
+    margin-left: -10%;
+  }
+}
+
 .timeline {
   white-space: nowrap;
   overflow-x: hidden;
@@ -558,13 +570,25 @@ body {
   position: relative;
   display: inline-block;
   list-style-type: none;
-  width: 160px;
+  width: 16%;
   height: 3px;
   background: #C43334;
 }
 
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .timeline ol li {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .timeline ol li {
+    width: 14%;
+  }
+}
+
 .timeline ol li:last-child {
-  width: 280px;
+  width: 40%;
 }
 
 .timeline ol li:not(:first-child) {
@@ -593,6 +617,22 @@ body {
   white-space: normal;
   color: black;
   background: #efefef;
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .timeline ol li div {
+    width: 260px;
+    font-size: 0.95rem;
+
+  }
+}
+
+@media (max-width: 1000px) {
+  .timeline ol li div {
+    width: 240px;
+    font-size: 0.9rem;
+
+  }
 }
 
 .timeline ol li div::before {
@@ -657,7 +697,7 @@ body {
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 800px) {
   .timeline ol,
   .timeline ol li {
     width: auto;
