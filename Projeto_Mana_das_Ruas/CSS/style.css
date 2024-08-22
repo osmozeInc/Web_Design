@@ -17,6 +17,36 @@ h1, h3{
     text-align: center;
 }
 
+.tr-setas
+{
+  line-height: 0.5;
+  padding: 0px;
+}
+
+.td-cabecario {
+  color: #C43334;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+
+.titulos {
+  color: #962020;
+}
+
+.qr-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+/* ============================================================================ */
+
+
+
+
+/* Texto dentro do card ======================================================= */
 .paragrafo-do-card
 {
     text-align: center;
@@ -47,54 +77,6 @@ h1, h3{
         font-size: 120%;
       }
     }
-
-.tr-setas
-{
-  line-height: 0.5;
-  padding: 0px;
-}
-/* ============================================================================ */
-
-
-
-
-
-/* From Uiverse.io by ferlagher =============================================== */ 
-.button-sobre-nos {
-  position: relative;
-  font-size: 1.2em;
-  padding: 0.7em 1.4em;
-  background-color: #BF0426;
-  text-decoration: none;
-  border: none;
-  border-radius: 0.5em;
-  color: #DEDEDE;
-  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
-}
-
-.button-sobre-nos::before {
-  position: absolute;
-  content: '';
-  height: 0;
-  width: 0;
-  top: 0;
-  left: 0;
-  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
-  border-radius: 0 0 0.5em 0;
-  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
-}
-
-.button-sobre-nos:hover::before {
-  width: 1.6em;
-  height: 1.6em;
-}
-
-.button-sobre-nos:active {
-  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
-  transform: translate(0.1em, 0.1em);
-}
-
 /* ============================================================================ */
 
 
@@ -299,17 +281,15 @@ h1, h3{
   }
 }
 
-
 .tablet-fundo {
   position: relative;
-  width: 100%; /* Ajusta a largura do tablet conforme o tamanho da tela */
-  height: 100%; /* Altura do tablet */
-  background-color: #efefef; /* Cor de fundo cinza claro */
-  border-radius: 30px; /* Bordas arredondadas do tablet */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do tablet */
+  width: 100%;
+  height: 100%;
+  background-color: #efefef; 
+  border-radius: 30px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo para o botão na parte inferior do tablet */
 .tablet-button {
   position: absolute;
   bottom: 0;
@@ -317,34 +297,30 @@ h1, h3{
   transform: translateX(-50%);
   width: 60%;
   height: 20px;
-  background-color: #b0b0b0; /* Cor cinza para o botão */
-  border-radius: 20px; /* Bordas arredondadas do botão */
+  background-color: #b0b0b0;
+  border-radius: 20px;
   margin-bottom: 2%;
 }
 
-/* Estilo para as imagens dentro do tablet */
 .tablet-container img {
   width: 90%;
   height: auto;
   display: block;
 }
 
-/* Estilo para a imagem superior */
 .img-top {
-  height: 15%; /* Altura da imagem superior */
+  height: 15%;
   margin-top: 8%;
 }
 
-/* Estilo para a imagem central */
 .img-center {
-  width: 90.1%; /* Largura da imagem central */
+  width: 90%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-/* Estilo para a imagem inferior */
 .img-bottom {
-  height: 15%; /* Altura da imagem inferior */
+  height: 15%; 
 }
 /* ============================================================================ */
 
@@ -354,7 +330,7 @@ h1, h3{
 
 /* paragrafo responsivo ======================================================= */
 .p-linha-do-tempo {
-  font-size: 20px; /* Tamanho padrão */
+  font-size: 20px;
 }
 
 @media (max-width: 576px) {
@@ -385,24 +361,8 @@ h1, h3{
 
 
 
-/* =============================================================== */
 
-
-
-
-.td-cabecario {
-  color: #C43334;
-  font-weight: bold;
-  font-size: 90%;
-}
-
-
-.titulos {
-  color: #962020;
-}
-
-
-
+/* lista de itens para doação ================================================ */
 .li-ajude {
   font-weight: bold;
   color: #962020;
@@ -420,21 +380,13 @@ h1, h3{
         font-size: 110%;
     }
   }
+/* ========================================================================== */
 
 
 
 
 
-  .qr-code {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-
-
-
-
+/* ========================================================================== */
   .paragrafo-voluntario {
     font-size: 100%;
     color: #962020;
@@ -451,12 +403,62 @@ h1, h3{
         font-size: 140%;
     }
   }
+/* ========================================================================== */
 
 
 
-  /* ================ LINHA DO TEMPO ================================================ */
 
-  *,
+
+
+
+
+
+
+/* From Uiverse.io by ferlagher =============================================== */ 
+.button-sobre-nos {
+  position: relative;
+  font-size: 1.2em;
+  padding: 0.7em 1.4em;
+  background-color: #BF0426;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.button-sobre-nos::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.button-sobre-nos:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.button-sobre-nos:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
+}
+
+/* ============================================================================ */
+
+
+
+
+
+/* ================ LINHA DO TEMPO ================================================ */
+
+*,
 *::before,
 *::after {
   margin: 0;
