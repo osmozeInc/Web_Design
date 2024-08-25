@@ -855,7 +855,7 @@ body {
 }
 
 .timeline ol li:last-child {
-  width: 40%;
+  width: 50%;
 }
 
 .timeline ol li:not(:first-child) {
@@ -938,28 +938,6 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 8px;
-}
-
-/* TIMELINE ARROWS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline .arrows {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.timeline .arrows .arrow__prev {
-  margin-right: 20px;
-}
-
-.timeline .disabled {
-  opacity: 0.5;
-}
-
-.timeline .arrows img {
-  width: 45px;
-  height: 45px;
 }
 
 /* GENERAL MEDIA QUERIES
