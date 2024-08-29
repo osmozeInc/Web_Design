@@ -2,9 +2,13 @@
     color: white;
 }
 
+table{
+  width: 100%;
+}
+
 .circle {
-    width: 200px; /* Tamanho do círculo */
-    height: 200px; /* Tamanho do círculo */
+    width: 70%; /* Tamanho do círculo */
+    height: 70%; /* Tamanho do círculo */
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -21,84 +25,188 @@
 }
 
 .margem-foto-nome{
-    margin-left: 30px;
+    margin-left: 1%;
 }
 
-/* From Uiverse.io by ahmed150up */ 
-.card {
-    display: flex;
-    height: 70px;
-    width: 270px;
+.paragrafo-padrao{
+  margin-top: 5%;
+  margin-left: 4%;
+  margin-right: 5%;
+}
+
+.celula-contato{
+  margin-right: 5%;
+}
+
+
+@media (max-width: 650px) {
+  .titulo-h1{
+    font-size: 120%;
+  }
+  .titulo-h3{
+    font-size: 125%;
+  }
+  .titulo-h4{
+    font-size: 120%;
+  }
+  .titulo-h5{
+    font-size: 90%;
+  }
+  .paragrafo-padrao{
+    font-size: 90%;
+  }
+  .socialContainer{
+    width: 70px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 650px) {
+  .titulo-h1{
+    font-size: 180%;
+  }
+  .titulo-h3{
+    font-size: 160%;
+  }
+  .titulo-h4{
+    font-size: 130%;
+  }
+  .titulo-h5{
+    font-size: 120%;
+  }
+  .paragrafo-padrao{
+    font-size: 100%;
+  }
+  .socialContainer{
+    width: 100px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 950px) {
+  .titulo-h1{
+    font-size: 220%;
+  }
+  .titulo-h3{
+    font-size: 250%;
+  }
+  .titulo-h4{
+    font-size: 170%;
+  }
+  .titulo-h5{
+    font-size: 180%;
+  }
+  .paragrafo-padrao{
+    font-size: 110%;
+  }
+  .socialContainer{
+    width: 160px;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+  .titulo-h1{
+    font-size: 250%;
+  }
+  .titulo-h3{
+    font-size: 150%;
+  }
+  .titulo-h4{
+    font-size: 140%;
+  }
+  .titulo-h5{
+    font-size: 120%;
+  }
+  .paragrafo-padrao{
+    font-size: 100%;
+  }
+  .socialContainer{
+    width: 90px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .titulo-h1{
+    font-size: 250%;
+  }
+  .titulo-h3{
+    font-size: 190%;
+  }
+  .titulo-h4{
+    font-size: 150%;
+  }
+  .titulo-h5{
+    font-size: 150%;
+  }
+  .paragrafo-padrao{
+    font-size: 115%;
+  }
+  .socialContainer{
+    width: 130px;
   }
   
-  .card svg {
-    position: absolute;
-    display: flex;
-    width: 60%;
-    height: 100%;
-    font-size: 24px;
-    font-weight: 700;
+}
+
+
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+
+/* for all social containers*/
+.socialContainer {
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #e436b0;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #54646b;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #289c41;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
     opacity: 1;
-    transition: opacity 0.25s;
-    z-index: 2;
-    cursor: pointer;
   }
-  
-  .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    color: whitesmoke;
-    font-size: 24px;
-    text-decoration: none;
-    transition: 0.25s;
-    border-radius: 50px;
-  }
-  
-  .card svg {
-    transform: scale(1);
-  }
-  
-  .card .social-link1:hover {
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card .social-link2:hover {
-    background-color: #00ccff;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card .social-link3:hover {
-    background-color: #5865f2;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card .social-link4:hover {
-    background-color: #12a50b;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  @keyframes bounce_613 {
-    40% {
-      transform: scale(1.4);
-    }
-  
-    60% {
-      transform: scale(0.8);
-    }
-  
-    80% {
-      transform: scale(1.2);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
+}
