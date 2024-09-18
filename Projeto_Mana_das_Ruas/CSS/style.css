@@ -29,7 +29,6 @@ h1, h3{
   font-size: 90%;
 }
 
-
 .titulos {
   color: #962020;
 }
@@ -40,6 +39,7 @@ h1, h3{
   align-items: center;
   width: 50%;
 }
+
 
 /* ============================================================================ */
 
@@ -53,30 +53,25 @@ h1, h3{
     font-weight: bold;
 }
 
-    @media (max-width: 576px) {
-      .paragrafo-do-card {
-        font-size: 55%;
-      }
-    }
+@media (max-width: 576px) {
+  .paragrafo-do-card {
+    font-size: 75%;
+  }
+}
 
-    @media (min-width: 1220px) {
-      .paragrafo-do-card {
-        font-size: 120%;
-      }
-    }
+@media (min-width: 576px) and (max-width: 1220px) {
+  .texto-do-botao {
+    font-size: 95%;
+  }
+}
+
+@media (min-width: 1220px) {
+  .paragrafo-do-card {
+    font-size: 120%;
+  }
+}
 
 
-    @media (max-width: 576px) {
-      .texto-do-botao {
-        font-size: 70%;
-      }
-    }
-
-    @media (min-width: 1220px) {
-      .texto-do-botao {
-        font-size: 120%;
-      }
-    }
 /* ============================================================================ */
 
 
@@ -321,6 +316,46 @@ h1, h3{
 
 .img-bottom {
   height: 15%; 
+}
+/* ============================================================================ */
+
+
+
+
+
+/* H4 responsivo ============================================================== */
+.rodape {
+  font-size: 20px; /* Tamanho padrão */
+}
+
+@media (max-width: 576px) {
+  .rodape {
+      font-size: 80%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .rodape {
+      font-size: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .rodape {
+      font-size: 120%;
+  }
+}
+
+@media (min-width: 993px) {
+  .rodape {
+      font-size: 130%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rodape {
+      font-size: 150%;
+  }
 }
 /* ============================================================================ */
 
