@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de linguagens</title>
     <style>
-        td{
+        td, th{
             text-align: center; /*left, right, justify*/
             vertical-align: middle; /*top, bottom*/
-            padding: 20px;
-        }
-        table, td{
+            padding: 10px;
             border: 1px solid;
+            width: 20%;
+        }
+        table{
             border-collapse: collapse;
-            width: 624px;
-            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         th{
             background-color: cornflowerblue;
         }
-        tr:nth-child(even) {background-color:rgb(225, 234, 255);}
-        tr:hover{background-color: rgb(150, 200, 230);}
+        tr:nth-child(even) {background-color:rgb(204, 215, 241);}
+        tr:hover{background-color: rgb(126, 197, 241);}
+        tr.no-hover:hover{background-color: rgb(204, 215, 241);}
         img{
             width: 80px;
             height: 80px;
@@ -33,7 +36,7 @@
             <tr>
                 <th colspan=4>Linguagens de Programação</th>
             </tr>
-            <tr>
+            <tr class="no-hover">
                 <td>Logo</td>
                 <td>Linguagem</td>
                 <td>Tipo</td>
